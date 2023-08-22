@@ -1,0 +1,196 @@
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+.about__container {
+    padding: 8rem 2rem;
+    background-color: var(--verde);
+}
+
+.DW__photo {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.titles__sections__blue {
+    font-weight: 700;
+    color: var(--azul);
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text__about__one {
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--azul);
+    text-align: center;
+}
+
+.text__about__center {
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--azul);
+    text-align: center;
+}
+
+.subtitles__sections__blue {
+    color: var(--azul);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.jump__line {
+    margin-bottom: 1rem;
+}
+
+.bold__blue {
+    font-weight: 700;
+    color: var(--azul);
+}
+.gallery__hobbies {
+    gap: 1rem;
+}
+
+.card__hobbies {
+    left: 0;
+    border-radius: 5px;
+    padding-top: .5rem;
+    height: 12rem;
+    color: var(--blanco);
+    text-align: center;
+}
+
+.text__hobbies__gallery {
+    background-color: rgba(212, 125, 136, 0.653);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.card__hobbies:nth-child(1) {
+    background-image: url("../img/roller__hobbie.webp");
+    background-repeat: round;
+    width: 100%;
+}
+
+.card__hobbies:nth-child(2) {
+    background-image: url("../img/Viajar.webp");
+    background-repeat: round;
+    margin: 2rem 0;
+}
+
+.card__hobbies:nth-child(3) {
+    background-image: url("../img/fotografía.webp");
+    background-repeat: round;
+}
+
+.card__hobbies:nth-child(4) {
+    background-image: url("../img/caminar__1.webp");
+    background-repeat: round;
+    margin: 2rem 0;
+}
+
+.card__hobbies:nth-child(5) {
+    background-image: url("../img/aprender.webp");
+    background-repeat: round;
+}
+
+
+
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+@media screen and (min-width: 768px) {
+    .about__container {
+        padding: 8rem 5rem;
+    }
+
+    .card__hobbies {
+        height: 25rem;
+    }
+}
+
+
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .about__container {
+        padding: 8rem 6.7rem;
+    }
+
+    .about__container__text__one {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 2rem;
+        gap: 4rem;
+    }
+
+    .DW__photo {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    
+
+    .text__about__one {
+        text-align: right;
+    }
+
+
+    /* Galería hobbies */
+    .gallery__hobbies {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card__hobbies {
+        position: relative;
+        left: 0;
+        border-radius: 5px;
+        padding-top: .5rem;
+        height: 20rem;
+        transition: 0.5s ease-in-out;
+        flex: 1px;
+        color: var(--blanco);
+        text-align: center;
+    }
+    
+    .card__hobbies:nth-child(2) {
+        margin: 0rem 0;
+    }
+    
+    .card__hobbies:nth-child(4) {
+        margin: 0rem 0;
+    }
+
+    .card__hobbies:hover {
+        flex: 3;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+body.dark .about__container {
+    background-color: var(--azul);
+}
+
+body.dark .titles__sections__blue {
+    color: var(--blanco);
+}
+
+body.dark .text__about__one {
+    color: var(--blanco);
+}
+
+body.dark .text__about__center {
+    color: var(--blanco);
+}
+
+body.dark .bold__blue {
+    color: var(--verde);
+}
+
+body.dark .subtitles__sections__blue{
+    color: var(--blanco);
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&C | Dev Front End</title>
+
+    <link rel="icon" type="image/jpg" href="img/Favicon__2.png"/>
+
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Link Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- Link icons -->
+    <link rel="stylesheet" href="css/icomoon/style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/1_propiedades-basicas.css">
+    <link rel="stylesheet" href="css/2_informacion-personal-header.css">
+    <link rel="stylesheet" href="css/3_barra-navegacion.css">
+    <link rel="stylesheet" href="css/4_modo-nocturno.css">
+    <link rel="stylesheet" href="css/5_banner-principal.css">
+    <link rel="stylesheet" href="css/6_acerca-mi.css">
+    <link rel="stylesheet" href="css/7_education.css">
+    <link rel="stylesheet" href="css/8_experience.css">
+    <link rel="stylesheet" href="css/9_portafolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <header class="my__header container head">
+        <!-- Información -->
+        <div class="informacion__personal">
+            <div class="icons__group">
+                <div class="icons__group__1">
+                    <a href="https://www.linkedin.com/in/luz-gtz-sanchez/" class="icons__redes__sociales"
+                        target="_blank"><ion-icon name="logo-linkedin"></a></ion-icon>
+                    <span class="icons__text hidden">LinkedIn</span>
+                    <span class="icons__bg"></span>
+                </div>
+
+                <div class="icons__group__2">
+                    <a href="https://github.com/LuzMaGtz" class="icons__redes__sociales" target="_blank"><ion-icon
+                            name="logo-github"></a></ion-icon>
+                    <span class="icons__text hidden">GitHub</span>
+                    <span class="icons__bg"></span>
+                </div>
+
+                <div class="icons__group__3">
+                    <a href="https://wa.link/cfqq7l" class="icons__redes__sociales" target="_blank"><ion-icon
+                            name="logo-whatsapp"></a></ion-icon>
+                    <span class="icons__text hidden">WhatsApp</span>
+                    <span class="icons__bg"></span>
+                </div>
+
+                <div class="icons__group__4">
+                    <a href="mailto:ma.luz.gsanchez@gmail.com" class="icons__redes__sociales" target="_blank"><ion-icon
+                            name="mail-outline"></ion-icon></a>
+                    <span class="icons__text hidden">E-mail</span>
+                    <span class="icons__bg"></span>
+                </div>
+
+            </div>
+
+            <!-- Modo nocturno -->
+            <div class="btn__modo__dark">
+                <button class="switch" id="switch">
+                    <span class="icons__dark"><ion-icon name="sunny-outline"></ion-icon></span>
+                    <span class="icons__dark"><ion-icon name="moon-outline"></ion-icon></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Barra de navegación -->
+
+        <div class="header__nav">
+            <a href="#"><img src="img/Azul-8.png" alt="Logotipo de Punto & Coma" class="head__logo"></a>
+            <button id="abrir" class="abrir__menu"><ion-icon name="menu-outline"></ion-icon></button>
+
+            <nav class="nav" id="nav">
+                <button id="cerrar" class="cerrar__menu"><ion-icon name="close-outline"></ion-icon></button>
+                <ul class="nav__list">
+                    <li class="item">
+                        <a href="#">
+                            <div class="nav__content">
+                                <span class="text__nav">Home</span>
+                                <span class="icons__nav">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="icons__bg"></span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#sobre-mi">
+                            <div class="nav__content">
+                                <span class="text__nav">Acerca de mí</span>
+                                <span class="icons__nav">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                </span>
+                                <span class="icons__bg"></span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#education">
+                            <div class="nav__content">
+                                <span class="text__nav">Educación académica</span>
+                                <span class="icons__nav">
+                                    <ion-icon name="school-outline"></ion-icon>
+                                </span>
+                                <span class="icons__bg"></span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#experience">
+                            <div class="nav__content">
+                                <span class="text__nav">Experiencia laboral</span>
+                                <span class="icons__nav">
+                                    <ion-icon name="bag-outline"></ion-icon>
+                                </span>
+                                <span class="icons__bg"></span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#portafolio">
+                            <div class="nav__content">
+                                <span class="text__nav">Portafolio</span>
+                                <span class="icons__nav">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </span>
+                                <span class="icons__bg"></span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#contact">
+                            <div class="nav__content">
+                                <span class="text__nav">Contacto</span>
+                                <span class="icons__nav">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </span>
+                                <span class="icons__bg"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Contenidos -->
+    <main>
+        <!-- Encabezado/banner principal -->
+        <section class="banner__principal__div">
+            <div class="div__1">
+                <h3 class="present__luz">¡Hola, hola! mucho gusto, me llamo<span class="bold__pink"> Luz
+                        Sánchez</span></h3>
+                <br>
+                <span class="text__primer">Soy</span>
+                <span class="text__js"></span>
+                <span class="guion__">_</span>
+                <p class="text__body">Tengo experiencia en <span class="negritas"> diseño gráfico y
+                        web,</span> actualmente me encuentro participando en el proyecto <span class="negritas"> Oracle
+                        ONE en Alura Latam.</span> Me apasiona
+                    el mundo del diseño web y <span class="negritas">me encanta crear sitios web</span> y aplicaciones
+                    móviles.</p>
+                <p class="text__body">Mi meta es continuar creciendo profesionalmente en un ambiente colaborativo,
+                    donde pueda enfrentar proyectos desafiantes que me permitan desarrollar y potenciar mis
+                    habilidades. </p>
+            </div>
+            <div class="div_2 box__photo">
+                <div class="content__photo">
+                    <img class="photo__evhelhyn" src="img/1_luz.webp" alt="Fotografía de Luz">
+                    <h3 class="text__photo">Luz Sánchez <br><span class="text__photo__span">Desarrolladora
+                            front-end</span></h3>
+                    <a class="btn__photo" href="https://wa.link/cfqq7l" target="_blank">¡Contáctame!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección acerca de mí -->
+        <section class="about__container" id="sobre-mi">
+            <div>
+                <h2 class="titles__sections__blue">Conoce el corazón detrás de cada proyecto</h2>
+                <div class="about__container__text__one">
+                    <img src="img/DW.webp" alt="Imagen sobre desarrollo web" class="DW__photo">
+                    <p class="text__about__one">Soy Luz Sánchez, desarrolladora front-end, diseñadora web y aventurera
+                        de <span class="bold__blue">27 años,</span> originaria de <span class="bold__blue">CDMX,
+                            México.</span>
+                        Desde que era niña, siempre he tenido un gran amor por el diseño, tanto así que solía pasar
+                        horas
+                        dibujando y plasmando mis ideas en papel. Con el tiempo, me di cuenta de que mi pasión por el
+                        diseño
+                        era más que un simple hobby, y decidí convertirlo en mi profesión.
+                        <br>
+                        <br>
+                        Como persona, me considero <span class="bold__blue">determinada, apasionada y honesta,</span>
+                        pero
+                        también un poco obsesiva con los detalles (¡lo siento, no lo puedo evitar!). Soy una persona
+                        compleja, con defectos y virtudes, pero
+                        con <span class="bold__blue">muchas ganas de seguir creciendo y aprendiendo</span> en todos los
+                        aspectos de la vida. Me considero una persona agradecida y humilde, y siempre trato de devolver
+                        todo
+                        lo bueno que la vida me ha dado.
+                    </p>
+                </div>
+
+
+                <hr class="linea__verde">
+
+                <h3 class="subtitles__sections__blue">Mis pasatiempos</h3>
+                <p class="text__about__center">Creo que es importante encontrar un <span class="bold__blue">equilibrio
+                        entre la vida personal y laboral.</span>
+                    Por eso, dedico
+                    tiempo
+                    a mis hobbies, entre ellos se encuentra el patinaje, la fotografía y descubrir rincones interesantes
+                    en la ciudad. Me apasiona viajar y conocer nuevas culturas, probar diferentes platillos y vivir
+                    aventuras
+                    emocionantes. ¡Incluso me atrevo a saltar en paracaídas y escalar montañas! (¡la adrenalina es lo
+                    mío!).
+                    Soy una persona curiosa y siempre <span class="bold__blue">busco nuevos retos y experiencias</span>
+                    para crecer en todos los
+                    aspectos
+                    de la vida. Debo confesar que soy un poco <span class="bold__blue">perfeccionista</span> y siempre
+                    trato de hacer las cosas de la
+                    mejor
+                    manera posible. Además, soy una <span class="bold__blue">apasionada</span> del arte en todas sus
+                    formas.</p>
+            </div>
+            <div class="gallery__hobbies">
+                <div class="card__hobbies"><span class="text__hobbies__gallery">Patinar</span></div>
+                <div class="card__hobbies"><span class="text__hobbies__gallery">Viajar</span></div>
+                <div class="card__hobbies"><span class="text__hobbies__gallery">Fotografía</span></div>
+                <div class="card__hobbies"><span class="text__hobbies__gallery">Caminar</span></div>
+                <div class="card__hobbies"><span class="text__hobbies__gallery">Aprender</span></div>
+            </div>
+
+        </section>
+
+
+        <section id="education" class="education">
+            <div class="education__container">
+                <h2 class="titles__sections__ligth">¡Descubre mis habilidades y conocimientos!</h2>
+                <h3 class="subtitles__sections__ligth">Mi educación</h3>
+
+                <div class="container__card__education">
+                    <div class="box__education box__education__one">
+                        <p class="text__education__container">Oracle Next Education en Alura Latam
+                            <br>
+                            <br>Ene. 2023 – Actualmente
+                            <br>Programación
+                        </p>
+                        <span class="span__education__card">más detalles</span>
+                        <div class="pic card__one__education"></div>
+                        <button class="button__card__education"></button>
+                    </div>
+
+                    <div class="box__education">
+                        <p class="text__education__container">Universidad Autónoma Metropolitana
+                            <br>
+                            <br>Sep. 2017 - Oct. 2021
+                            <br>Diseño de la Comunicación Gráfica
+                            <br>Título y cédula profesional.
+                            <br>Graduada con uno de los mejores promedios de mi generación.
+                        </p>
+                        <span class="span__education__card">más detalles</span>
+                        <div class="pic card__two__education"></div>
+                        <button class="button__card__education"></button>
+                    </div>
+                </div>
+
+                <hr class="linea__blanco">
+
+                <h3 class="subtitles__sections__ligth">Cursos</h3>
+                <p class="text__center__ligth">A pesar de ser egresada, sigo aprendiendo día a día mediante <span
+                        class="negritas">cursos y capacitaciones </span>
+                    como: <span class="negritas">"manejo de WordPress", "Visual Elements of User Interface Design", e
+                        "Introducción al Desarrollo Web I y II".</span></p>
+
+                <div class="wrapper">
+                    <img src="img/Certificados_1_VEUID.webp"
+                        alt="Certificado de Visual Elements of User Interface Desing" id="main__photo">
+
+                    <div class="img__wrapper">
+                        <img src="img/Certificados_1_VEUID.webp"
+                            alt="Certificado de Visual Elements of User Interface Desing"
+                            class="img__carrousel__certificados">
+                        <img src="img/Certificados_2_DWI.webp" alt="Certificado de Introducción al desarrollo Web I"
+                            class="img__carrousel__certificados">
+                        <img src="img/Certificados_3_DWII.webp" alt="Certificado de Introducción al desarrollo Web II"
+                            class="img__carrousel__certificados">
+                        <img src="img/Certificados_4_wordpress.webp"
+                            alt="Certificado de Mega Curso de WordPress de cero a maestro"
+                            class="img__carrousel__certificados">
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="linea__blanco">
+
+            <h3 class="subtitles__sections__ligth">Software</h3>
+
+            <div class="software__container">
+                <div class="software__education__icons">
+                    <span class="icon-adobephotoshop  icons__education"></span>
+                    <h4 class="feature-title">Adobe Photoshop</h4>
+                    <p class="nivel__skills">Nivel intermedio</p>
+                </div>
+
+                <div class="software__education__icons">
+                    <span class="icon-adobeillustrator icons__education"></span>
+                    <h4 class="feature-title ">Adobe Illustrator</h4>
+                    <p class="nivel__skills">Nivel avanzado</p>
+                </div>
+
+                <div class="software__education__icons">
+                    <span class="icon-adobeindesign icons__education"></span>
+                    <h4 class="feature-title">Adobe InDesing</h4>
+                    <p class="nivel__skills">Nivel avanzado</p>
+                </div>
+
+                <div class="software__education__icons">
+                    <span class="icon-adobepremiere icons__education"></span>
+                    <h4 class="feature-title">Adobe Premiere Pro</h4>
+                    <p class="nivel__skills">Nivel intermedio</p>
+                </div>
+
+                <div class="software__education__icons">
+                    <ion-icon name="logo-figma" class="icons__education logo-figma"></ion-icon>
+                    <h4 class="feature-title">Figma</h4>
+                    <p class="nivel__skills">Nivel básico</p>
+                </div>
+
+                <div class="software__education__icons">
+                    <span class="icon-visualstudiocode icons__education"></span>
+                    <h4 class="feature-title">Visual Studio Code</h4>
+                    <p class="nivel__skills">Nivel intermedio</p>
+                </div>
+            </div>
+
+            <hr class="linea__blanco">
+
+            <h3 class="subtitles__sections__ligth">Skills</h3>
+            <div class="skills__container__principal">
+                <div class="card__skills">
+                    <div class="card__inner">
+                        <div class="card__front">
+                            <span class="icon__skills"><ion-icon name="heart-outline"></ion-icon></span>
+                            <h4 class="skills__title">Soft</h4>
+                        </div>
+                        <div class="card__back">
+                            <ul>
+                                <li class="content__skills">Trabajo en equipo</li>
+                                <li class="content__skills">Comunicación efectiva</li>
+                                <li class="content__skills">Resolución de problemas</li>
+                                <li class="content__skills">Adaptabilidad</li>
+                                <li class="content__skills">Autogestión</li>
+                                <li class="content__skills">Creatividad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__skills">
+                    <div class="card__inner">
+                        <div class="card__front">
+                            <span class="icon__skills"><ion-icon name="settings-outline"></ion-icon></span>
+                            <h4 class="skills__title">Hard</h4>
+                        </div>
+                        <div class="card__back">
+                            <ul>
+                                <li class="content__skills">Conocimientos en HTML, CSS y JavaScript</li>
+                                <li class="content__skills">Uso de frameworks como Bootstrap</li>
+                                <li class="content__skills">Principios en diseño UX y UI</li>
+                                <li class="content__skills">Diseño responsivo</li>
+                                <li class="content__skills">Conocimientos en SEO</li>
+                                <li class="content__skills">Manejo de WordPress</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="experience__container">
+                <h2 class="titles__sections__blue">Descubre mis contribuciones a distintas empresas</h2>
+
+                <div class="container__cards__jobs">
+                    <div class="card__experience">
+                        <div class="lines"></div>
+                        <div class="img__card__experience">
+                            <img class="logo__job" src="img/UAM-X.png"
+                                alt="logotipo de la Universidad Autónoma Metropolitana">
+                        </div>
+
+                        <div class="content__card__experiencie">
+                            <div class="position__job">
+                                <h3 class="position__place">Diseñadora gráfica
+                                    <br><span class="company__span">Universidad Autónoma Metropolitana</span>
+                                    <br><span class="date__company">May. 2023 – Actualmente</span>
+                                </h3>
+                            </div>
+
+                            <div class="details__job">
+                                <ul class="list__job">
+                                    <li>
+                                        Responsable de la creación y edición de materiales digitales, así como de la
+                                        programación y publicación de contenido en todas las redes sociales de la
+                                        universidad, siguiendo una calendarización previamente establecida.
+                                    </li>
+                                    <li>
+                                        Contribución al incremento de las pautas digitales, fortaleciendo así la
+                                        presencia
+                                        digital de la institución.
+                                    </li>
+                                    <li>
+                                        Encargada de recopilar y difundir información relevante sobre eventos,
+                                        conferencias
+                                        y talleres, generando mayor interés y participación en los eventos de la UAM
+                                        Xochimilco a través de una difusión estratégica en las redes sociales.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__experience">
+                        <div class="lines"></div>
+                        <div class="img__card__experience">
+                            <img class="logo__job" src="img/Editorial luxpluslux.png"
+                                alt="logotipo de la Editorial luxpluslux">
+                        </div>
+
+                        <div class="content__card__experiencie">
+                            <div class="position__job">
+                                <h3 class="position__place">Diseñadora Web
+                                    <br><span class="company__span">Editorial luxpluslux</span>
+                                    <br><span class="date__company">Dic. 2021 – Dic. 2022</span>
+                                </h3>
+                            </div>
+
+                            <div class="details__job">
+                                <ul class="list__job">
+                                    <li>
+                                        Planificación y maquetación del sitio web con un diseño responsivo para mejorar
+                                        la usabilidad y satisfacción de los visitantes.
+
+                                    </li>
+                                    <li>
+                                        Gestión y mantenimiento del sitio web, aumentando así la visibilidad y presencia
+                                        en línea de la editorial, atrayendo más tráfico de usuarios interesados y
+                                        potenciales clientes.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__experience">
+                        <div class="lines"></div>
+                        <div class="img__card__experience">
+                            <img class="logo__job" src="img/Anuncios Rodríguez.png"
+                                alt="logotipo de la Anuncios Rodríguez">
+                        </div>
+
+                        <div class="content__card__experiencie">
+                            <div class="position__job">
+                                <h3 class="position__place">Diseñadora Web
+                                    <br><span class="company__span">Anuncios Rodríguez</span>
+                                    <br><span class="date__company">Nov. 2021 – Ene. 2022</span>
+                                </h3>
+                            </div>
+
+                            <div class="details__job">
+                                <ul class="list__job">
+                                    <li>
+                                        Rediseño y reestructuración del sitio web, considerando los objetivos de la
+                                        marca y las necesidades del usuario.
+                                    </li>
+                                    <li>
+                                        Implementación de un diseño responsivo y una interfaz intuitiva para facilitar
+                                        la navegación y mejorar la experiencia de usuario.
+                                    </li>
+                                    <li>
+                                        Optimización y adaptación de los materiales gráficos para agilizar el acceso al
+                                        contenido del sitio web de manera eficiente.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__experience">
+                        <div class="lines"></div>
+                        <div class="img__card__experience">
+                            <img class="logo__job" src="img/Radio UNAM.png" alt="logotipo de la Radio UNAM">
+                        </div>
+
+                        <div class="content__card__experiencie">
+                            <div class="position__job">
+                                <h3 class="position__place">Diseñadora Web
+                                    <br><span class="company__span">Radio UNAM</span>
+                                    <br><span class="date__company">May. 2021 – Nov. 2021</span>
+                                </h3>
+                            </div>
+
+                            <div class="details__job">
+                                <ul class="list__job">
+                                    <li>
+                                        Participación en reuniones de planificación para definir la estrategia de
+                                        contenidos digitales, generando materiales gráficos creativos y atractivos para
+                                        la audiencia.
+                                    </li>
+                                    <li>
+                                        Planificación y desarrollo del sitio web de la revista Rúbrica, facilitando el
+                                        acceso rápido y fácil a los contenidos y aumentando el impacto en la difusión de
+                                        contenido.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__experience">
+                        <div class="lines"></div>
+                        <div class="img__card__experience">
+                            <img class="logo__job" src="img/LEGA.png" alt="logotipo de la LEGA">
+                        </div>
+
+                        <div class="content__card__experiencie">
+                            <div class="position__job">
+                                <h3 class="position__place">Diseñadora Gráfico
+                                    <br><span class="company__span">Radio UNAM</span>
+                                    <br><span class="date__company">May. 2021 – Nov. 2021</span>
+                                </h3>
+                            </div>
+
+                            <div class="details__job">
+                                <ul class="list__job">
+                                    <li>
+                                        Revisión, ajuste y adaptación de artes en preprensa para mejorar el rendimiento
+                                        de los materiales de producción, sin comprometer la calidad durante el proceso
+                                        de impresión.
+                                    </li>
+                                    <li>
+                                        Diseño e incorporación de nuevos productos publicitarios para ampliar la
+                                        variedad de opciones disponibles para los clientes en la cartelera de productos.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="portafolio" class="portafolio">
+            <div class="portafolio__container">
+                <h2 class="titles__sections__ligth">Portafolio</h2>
+                <p class="text__center__ligth">Me encantaría compartir mis proyectos contigo y espero que disfrutes de
+                    mi trabajo tanto como lo hice al crearlo.</p>
+
+                <div class="container__portfolio">
+                    <div class="content__portfolio">
+                        <div class="introduce__portfolio"></div>
+                        <div class="thumbnail__list">
+                            <div class="wraper__portfolio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation__portfolio">
+                        <button class="next__button__portfolio btn__portfolio">siguiente</button>
+                        <span class="line__portfolio"></span>
+                        <span class="ordinal__number__portfolio"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container__contact">
+                <div class="info__form">
+                    <h2 class="titles__sections__blue left">¿Quieres contactarme?</h2>
+                    <p class="text__about__center left">Complete el siguiente formulario y me pondré en contacto contigo lo
+                        antes posible.
+                </p>
+                </div>
+
+                <form action="https://formsubmit.co/ma.luz.gsanchez@gmail.com" method="post" autocomplete="off">
+                    <input type="text" name="name" placeholder="Nombre" class="campo" required>
+                    <input type="email" name="email" placeholder="E-mail" class="campo" required>
+                    <input type="text" name="subject" placeholder="Asunto" class="campo" required>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar mensaje" name="enviar" class="btn__enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer__end">
+                <p>By Luz Sánchez | 2023</p>
+        </div>
+    </footer>
+
+    <!-- JS icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>

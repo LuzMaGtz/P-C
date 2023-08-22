@@ -1,0 +1,268 @@
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+.experience__container {
+    /* background-color: var(--verde);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center; */
+    padding: 8rem 2rem;
+    background-color: var(--verde);
+}
+
+.container__cards__jobs {
+    display: grid;
+    gap: 5rem;
+    margin-top: 6rem;
+    justify-content: center;
+}
+
+.card__experience {
+    position: relative;
+    width: 18rem;
+    height: 14rem;
+    transition: 0.5s;
+    border-radius: 1.25rem;
+}
+
+.card__experience:hover {
+    height: 41rem;
+    cursor: pointer;
+}
+
+.card__experience .lines {
+    position: absolute;
+    inset: 0;
+    background: var(--modo__light);
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
+.card__experience .lines::before {
+    content: '';
+    position: absolute;
+    inset: 70px -20px;
+    background: linear-gradient(transparent, #313173, #313173, #313173, transparent);
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card__experience .lines::after {
+    content: '';
+    position: absolute;
+    background-color: var(--verde);
+    inset: 6px;
+    border-radius: 1.25rem;
+}
+
+.img__card__experience {
+    position: absolute;
+    top: -3.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9.5rem;
+    height: 9.5rem;
+    background-color: var(--modo__light);
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.card__experience:hover .img__card__experience {
+    width: 10rem;
+    height: 10rem;
+}
+
+.card__experience .img__card__experience::before {
+    content: '';
+    position: absolute;
+    inset: 50px -65px;
+    background: linear-gradient(transparent, #d47d88, #d47d88, #d47d88, transparent);
+    animation: animate2 8s linear infinite;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.card__experience .img__card__experience::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background-color: var(--verde);
+}
+
+.logo__job {
+    position: absolute;
+    top: 0.65rem;
+    left: 0.65rem;
+    z-index: 1;
+    width: calc(100% - 1.25rem);
+    height: calc(100% - 1.25rem);
+    filter: grayscale(1);
+}
+
+.logo__job:hover {
+    filter: none;
+}
+
+.card__experience .content__card__experiencie {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card__experience .content__card__experiencie .position__job {
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(5.5rem);
+}
+
+.card__experience:hover .content__card__experiencie .position__job {
+    transform: translateY(5.5rem);
+}
+
+.card__experience .content__card__experiencie .position__job .position__place {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--azul);
+    line-height: 1.2rem;
+}
+
+.card__experience .content__card__experiencie .position__job .position__place .company__span {
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--gris__claro);
+}
+
+.card__experience .content__card__experiencie .position__job .position__place .date__company {
+    font-size: 0.75rem;
+}
+
+.card__experience .content__card__experiencie .details__job {
+    transform: translateY(5rem);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.list__job {
+    list-style-type: circle;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+@media screen and (min-width: 768px) {
+    .experience__container {
+        padding: 8rem 5rem;
+    }
+
+    .card__experience {
+        width: 38rem;
+        height: 13rem;
+    }
+
+    .card__experience:hover {
+        height: 32rem;
+    }
+
+    .card__experience:hover .img__card__experience {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+
+    .card__experience .content__card__experiencie .position__job {
+        transform: translateY(4.75rem);
+    }
+
+    .card__experience:hover .content__card__experiencie .position__job {
+        transform: translateY(11rem);
+    }
+
+    .card__experience .content__card__experiencie .details__job {
+        transform: translateY(9rem);
+    }
+}
+
+
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .experience__container {
+        padding: 8rem 6.7rem;
+    }
+
+    .container__cards__jobs {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .card__experience {
+        width: 22rem;
+        height: 15rem;
+    }
+
+    .card__experience:hover {
+        height: 53.5rem;
+    }
+
+    .card__experience .lines::before {
+        inset: -100px 90px;
+    }
+}
+
+
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+body.dark .experience__container {
+    background-color: var(--azul);
+}
+
+body.dark .card__experience .lines {
+    background: var(--modo__dark);
+}
+
+body.dark .card__experience .lines::before {
+    background: linear-gradient(transparent, #86beb9, #86beb9, #86beb9, transparent);
+}
+
+body.dark .card__experience .lines::after {
+    background-color: var(--azul);
+}
+
+body.dark .img__card__experience {
+    background-color: var(--modo__dark);
+}
+
+body.dark .card__experience .img__card__experience::after {
+    background-color: var(--azul);
+}
+
+body.dark .card__experience .content__card__experiencie .position__job .position__place {
+    color: var(--verde);
+}
+
+body.dark .card__experience .content__card__experiencie .position__job .position__place .company__span {
+    color: var(--blanco);
+}
+
+body.dark .list__job {
+    color: var(--blanco);
+}

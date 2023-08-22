@@ -1,0 +1,281 @@
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+.portafolio__container {
+    padding: 8rem 2rem;
+}
+
+.btn__portfolio {
+    background-color: transparent;
+    border: 1px solid white;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 3.25rem;
+    transition: 0.5s ease;
+}
+
+.btn__portfolio:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container__portfolio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 43rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: var(--gris__claro);
+    color: var(--blanco);
+}
+
+.content__portfolio{
+    width: 100%;
+    display: flex;
+}
+
+.introduce__portfolio{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    z-index: 20;
+}
+
+.introduce__portfolio .wraper__portfolio{
+    position: absolute;
+    top: -13rem;
+    left: 0;
+    /* width: 100%; */
+    height: fit-content;
+    padding: 0 1.5rem 0 1.5rem;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* flex-direction: column; */
+    pointer-events: none;
+}
+
+.introduce__portfolio .wraper__portfolio span{
+    overflow: hidden;
+}
+
+.introduce__portfolio .wraper__portfolio span > *{
+    opacity: 0;
+    transition: 0.5s ease;
+    transform: translateY(18.75rem);
+    transition-delay: calc((3 - var(--idx)) * 0.1s);
+    width: 70%;
+} 
+
+.introduce__portfolio .wraper__portfolio.active{
+    pointer-events: all;
+}
+
+.introduce__portfolio .wraper__portfolio.active span > *{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--idx) * 0.1s);
+}
+
+.introduce__portfolio:not(.title__project__portfolio){
+    font-family: var(--font-raleway);
+}
+
+.introduce__portfolio .type__portfolio{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.introduce__portfolio .title__project__portfolio{
+    font-family: var(--font-ubuntu);
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.introduce__portfolio .description__portfolio{
+    font-size: .01rem;
+    margin-top: .5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.introduce__portfolio .discovery__button__portfolio{
+    width: 15.5rem;
+    height: 3rem;
+    border-radius: 3rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
+}
+
+.thumbnail__list{
+    position: relative;
+    height: 18.75rem;
+    flex: 1;
+}
+
+.thumbnail__list .wraper__portfolio{
+position: relative;
+z-index: 10;
+height: 18.75rem;
+}
+
+.thumbnail__portfolio{
+    position: absolute;
+    height: 12rem;
+    width: 8rem;
+    transform: translateX(calc(var(--idx) * 9rem));
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: 0.75s cubic-bezier(0.6, 0.1, 0.3, 1);
+    box-shadow: .75rem .75rem .75rem rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail__list .wraper__portfolio .thumbnail__portfolio.zoom{
+    width: 108rem;
+    height: 45rem;
+    transform: translate(-44rem, -16.75rem);
+    filter: brightness(40%);
+    box-shadow: none;
+}
+
+.thumbnail__portfolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container__portfolio .navigation__portfolio{
+    display: flex;
+    align-items: center;
+    padding: 3rem 1rem 3rem 2rem;
+    z-index: 20;
+}
+
+.navigation__portfolio .next__button__portfolio{
+    width: 11rem;
+    border-radius: 3rem;
+}
+
+.navigation__portfolio .line__portfolio{
+    flex: 1;
+    height: 2px;
+    background-color: var(--blanco);
+}
+
+.ordinal__number__portfolio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.ordinal__number__portfolio h2{
+    font-family: var(--font-ubuntu);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--blanco);
+    transform: translateY(200%);
+    transition: 0.5s ease;
+    line-height: 1;
+    position: absolute;
+}
+
+.ordinal__number__portfolio h2.active{
+    transform: unset;
+}
+
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+@media screen and (min-width: 768px) {
+    .introduce__portfolio .wraper__portfolio{
+        /* width: 100%; */
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 0 1.5rem 0 3rem;
+        bottom: 0;
+    }
+
+    .introduce__portfolio .title__project__portfolio{
+        font-size: 3rem;
+    }
+
+    .container__portfolio .navigation__portfolio {
+        margin-left: 40%;
+        gap: 1.25rem;
+        padding: 3rem 3rem 3rem 0;
+    }
+
+    .thumbnail__portfolio {
+        height: 15rem;
+        width: 10rem;
+        transform: translateX(calc(var(--idx) * 12rem));
+    }
+
+    .introduce__portfolio .description__portfolio{
+        font-size: 1rem;
+    }
+
+    .introduce__portfolio .type__portfolio{
+        font-size: 1.5rem;
+    }
+
+    /* .introduce__portfolio .wraper__portfolio span > *{
+        width: 70%;
+    }
+
+    .introduce__portfolio .wraper__portfolio.active span > *{
+        width: 70%;
+    } */
+}
+
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .portafolio__container {
+        padding: 8rem 6.7rem;
+    }
+
+    .introduce__portfolio .wraper__portfolio{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 0 1.5rem 0 3rem;
+        bottom:0;
+        top: -10rem;
+    }
+
+    .introduce__portfolio .title__project__portfolio{
+        font-size: 4rem;
+    }
+
+    .container__portfolio .navigation__portfolio {
+        margin-left: 40%;
+        gap: 1.25rem;
+        padding: 3rem 3rem 3rem 0;
+    }
+
+    .thumbnail__portfolio {
+        height: 15rem;
+        width: 10rem;
+        transform: translateX(calc(var(--idx) * 12rem));
+    }
+
+    .introduce__portfolio .description__portfolio{
+        font-size: 1rem;
+    }
+
+    .introduce__portfolio .type__portfolio{
+        font-size: 1.5rem;
+    }
+}
+
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+/* body.dark */

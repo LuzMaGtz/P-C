@@ -1,0 +1,89 @@
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+.container__contact{
+    padding: 8rem 2rem;
+    background-color: var(--verde);
+}
+
+.campo, textarea{
+    width: 100%;
+    padding: 1rem .75rem;
+    font-size: 1rem;
+    border: 1px solid var(--azul);
+    margin-bottom: 1.25rem;
+    border-radius: 3px;
+    outline: 0px;
+    font-family: var(--font-ubuntu);
+    color: var(--gris__oscuro);
+}
+
+/* textarea{
+    max-width: 33rem;
+    min-width: 33rem;
+    min-height: 8.75rem;
+    max-height: 9rem;
+} */
+
+.btn__enviar{
+    padding: 1rem;
+    font-size: 1rem;
+    background: none;
+    color: var(--azul);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .25rem;
+    border: var(--azul) solid 2px;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn__enviar:hover{
+    background-color: var(--blanco);
+}
+
+/* Footer */
+.footer__end{
+    background-color: var(--verde);
+    color: var(--azul);
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: -2rem;
+}
+
+.left{
+    text-align: left;
+}
+
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+@media screen and (min-width: 768px) {
+    .container__contact{
+        padding: 8rem 5rem;
+    }
+}
+
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .container__contact{
+        padding: 8rem 6.7rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+    
+}
+
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+body.dark .container__contact{
+    background-color: var(--azul);
+}
+
+body.dark .btn__enviar {
+    color: var(--verde);
+    border: var(--verde) solid 2px;
+}
+
+body.dark .footer__end {
+    background-color: var(--azul);
+    color: var(--blanco);
+}

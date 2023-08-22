@@ -1,0 +1,190 @@
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+
+
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+
+/* Contenedor principal */
+.my__header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    /* Otros estilos que desees aplicar al encabezado */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logotipo */
+.head__logo {
+    max-width: 12rem;
+}
+
+.abrir__menu {
+    display: block;
+
+    font-size: 2.5rem;
+    color: var(--azul);
+    border: 0;
+    background-color: var(--verde);
+}
+
+.cerrar__menu {
+    font-size: 2.5rem;
+    color: var(--azul);
+    border: 0;
+    background-color: var(--verde);
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--verde);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+}
+
+.nav.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__list {
+    flex-direction: column;
+    align-items: center;
+    color: var(--azul);
+    font-weight: 700;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Menu */
+.nav__content {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    z-index: 10;
+}
+
+.item a {
+    align-items: center;
+    display: flex;
+}
+
+.item .icons__nav {
+    display: flex;
+    border-left: 4px solid transparent;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.item .text__nav {
+    font-weight: 400;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.3s ease;
+}
+
+
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+@media screen and (min-width: 768px) {
+
+    
+
+    /* Logotipo */
+    .head__logo {
+        max-width: 12rem;
+    }
+}
+
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .my__header {
+        width: 100%;
+    }
+
+    .header__nav {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .abrir__menu {
+        display: none;
+    }
+
+    .cerrar__menu {
+        display: none;
+    }
+
+    .nav {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        gap: 1rem;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        position: relative;
+        display: flex;
+        height: 70px;
+    }
+
+    .item:hover .icons__nav {
+        transform: translateX(5px);
+        border-left: 4px;
+        border-style: solid;
+        border-color: var(--rosa);
+    }
+
+    .item:hover {
+        border-left-color: var(--rosa);
+    }
+
+    .item:hover .text__nav {
+        width: 100%;
+    }
+}
+
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+body.dark .nav__list {
+    color: var(--blanco);
+}
+
+body.dark .nav {
+    background-color: var(--azul);
+}
+
+body.dark .abrir__menu {
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+
+body.dark .cerrar__menu {
+    color: var(--blanco);
+    background-color: var(--azul);
+}

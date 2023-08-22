@@ -1,0 +1,432 @@
+/* ----------------------------------------- Versión móvil -----------------------------------------*/
+.education {
+    padding: 8rem 2rem;
+}
+
+.container__card__education {
+    /* display: flex;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100 vh;
+    justify-content: space-evenly; */
+
+    display: block;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.skills__container__principal {
+    gap: 2rem;
+}
+
+.titles__sections__ligth {
+    font-weight: 700;
+    color: var(--rosa);
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subtitles__sections__ligth {
+    color: var(--gris__claro);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* Contenedor prueba card c/margen */
+.box__education {
+    position: relative;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azul);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.box__education__one {
+    margin-bottom: 2rem;
+
+}
+
+.box__education::before {
+    content: '';
+    position: absolute;
+    width: 35rem;
+    height: 8rem;
+    background: linear-gradient(315deg, #d47d88, #86beb9);
+    animation: animate 4s linear infinite;
+}
+
+.box__education::after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background: var(--modo__light);
+    border-radius: 1rem;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pic {
+    z-index: 97;
+    width: 24.5rem;
+    height: 12.5rem;
+    background-size: cover;
+    border-radius: 0.75rem;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+    scale: .5;
+}
+
+
+.span__education__card {
+    z-index: 99;
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-variant: small-caps;
+    position: absolute;
+    top: 2rem;
+    right: 1.75rem;
+    color: var(--gris__oscuro);
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    transition: 0.2s ease;
+    opacity: 0.8;
+}
+
+.button__card__education {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 98;
+}
+
+.card__one__education {
+    background-image: url("../img/Logo_ONE.webp");
+}
+
+.card__two__education {
+    background-image: url("../img/UAM_Logo.webp");
+}
+
+.text__education__container {
+    z-index: 99;
+    position: absolute;
+    bottom: 2rem;
+    right: 8rem;
+    width: 12rem;
+    color: var(--azul);
+    opacity: 0;
+    font-size: 0.75rem;
+    text-align: right;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+    font-weight: 600;
+}
+
+.box__education:hover .button__card__education {
+    transform: scale(18);
+    opacity: 0.9;
+}
+
+.box__education:hover .text__education__container {
+    opacity: 1;
+    right: 3rem;
+}
+
+.box__education:hover .span__education__card {
+    opacity: 0;
+    top: 5rem;
+}
+
+.box__education:hover .pic {
+    filter: grayscale(0);
+    width: 28rem;
+}
+
+/* Cursos */
+.text__center__ligth {
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Carrousel certificados */
+.wrapper {
+    margin: 0 auto;
+}
+
+#main__photo {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: .75rem;
+}
+
+
+
+.img__carrousel__certificados {
+    width: 4.5rem;
+    height: 4.5rem;
+    transition: 0.3s;
+}
+
+.img__carrousel__certificados:hover {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--blanco);
+    margin: 3px;
+}
+
+img {
+    cursor: pointer;
+}
+
+/* Software */
+.software__container {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 0 auto;
+    justify-content: center;
+}
+
+
+/* .software__container {
+    gap: 0rem;
+} */
+
+.software__education__icons {
+    width: 20rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.icons__education {
+    font-size: 5rem;
+}
+
+.feature-title {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--rosa);
+}
+
+.logo-figma {
+    color: var(--negro);
+}
+
+/* Skills */
+.skills__container__principal {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 25rem;
+    flex-direction: column;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+}
+
+.card__skills {
+    border-radius: 20px;
+    height: 18.75rem;
+}
+
+.card__inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card__inner:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.card__front {
+    background-color: var(--verde);
+}
+
+.card__back {
+    background-color: var(--rosa);
+    color: blue;
+    transform: rotateY(180deg);
+}
+
+/* Texto skills */
+.skills__title {
+    font-size: 1.25rem;
+    color: var(--azul);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.icon__skills {
+    font-size: 3rem;
+    color: var(--azul);
+    font-weight: 600;
+}
+
+.content__skills {
+    text-align: center;
+    line-height: 2;
+    color: white;
+}
+
+
+/* ----------------------------------------- Versión tablet -----------------------------------------*/
+@media screen and (min-width: 768px) {
+    .container__card__education {
+        display: block;
+        padding-left: 7rem;
+    }
+
+    .skills__container__principal {
+        gap: 2rem;
+        flex-direction: initial;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+    .software__container {
+        gap: 0rem;
+    }
+
+    .box__education {
+        width: 30rem;
+    }
+
+    .card__skills {
+        width: 25rem;
+    }
+
+    .pic {
+        scale: .75;
+    }
+
+    .img__carrousel__certificados {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .img__carrousel__certificados:hover {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+
+/* ----------------------------------------- Versión Desktop -----------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .container__card__education {
+        display: flex; 
+        align-items: center;
+        gap: 2rem;
+        padding-left: 0rem;
+        justify-content: space-evenly;
+    }
+
+    .education {
+        padding: 8rem 6.7rem;
+    }
+
+    .box__education__one {
+        margin-bottom: 0rem;
+    }
+
+    .skills__container__principal {
+        gap: 10rem;
+    }
+
+    .software__container {
+        gap: 10rem;
+    }
+}
+
+/* ----------------------------------------- Versión modo oscuro -----------------------------------------*/
+/* body.dark */
+body.dark .linea__blanco {
+    background-color: var(--modo__dark);
+    border-color: var(--blanco);
+}
+
+body.dark .box__education::after {
+    background-color: var(--modo__dark);
+}
+
+body.dark .card__one__education {
+    background-image: url(../img/Logo_ONE__Blanco.webp);
+}
+
+body.dark .card__two__education {
+    background-image: url(../img/UAM_Logo_Blanco.webp);
+}
+
+body.dark .subtitles__sections__ligth {
+    color: var(--blanco);
+}
+
+body.dark .text__center__ligth {
+    color: var(--blanco);
+}
+
+body.dark .nivel__skills {
+    color: var(--blanco);
+}
+
+body.dark .logo-figma {
+    color: var(--blanco)
+}
+
+body.dark .card__front {
+    background-color: var(--azul);
+}
+
+body.dark .skills__title {
+    color: var(--blanco);
+}
+
+body.dark .icon__skills {
+    color: var(--blanco);
+}
+
+body.dark .span__education__card {
+    color: var(--blanco);
+}
